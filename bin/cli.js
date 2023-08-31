@@ -12,12 +12,10 @@ const pkg = JSON.parse(
 program
   // 定义命令和参数
   .command('create <app-name>')
-  .description('create a new project')
+  .description('创建一个工程')
   // -f or --force 为强制创建，如果创建的目录存在则直接覆盖
-  .option('-f, --force', 'overwrite target directory if it exist')
+  .option('-f, --force', '覆盖目标目录')
   .action((name, options) => {
-    // 打印执行结果
-    // console.log('name:', name, 'options:', options);
     createFun(name,options)
   })
   
@@ -26,28 +24,8 @@ program
   .version(`v${pkg.version}`)
   .usage('<command> [option]')
 
-// 配置 config 命令
-program
-  .command('config [value]')
-  .description('inspect and modify the config')
-  .option('-g, --get <path>', 'get value from option')
-  .option('-s, --set <path> <value>')
-  .option('-d, --delete <path>', 'delete option from config')
-  .action((value, options) => {
-    // console.log(value, options)
-  })
-
-// 配置 ui 命令
-program
-  .command('ui')
-  .description('start add open roc-cli ui')
-  .option('-p, --port <port>', 'Port used for the UI Server')
-  .action((option) => {
-    console.log(option)
-  })
-
   program
-  // 监听 --help 执行
+    // 监听 --help 执行
     .on('--help', () => {
     // 使用 figlet 绘制 Logo
     console.log('\r\n' + figlet.textSync('suiCli', {
@@ -58,7 +36,7 @@ program
       whitespaceBreak: true
     }));
     // 新增说明信息
-    console.log(`\r\nRun ${chalk.cyan(`sg <command> --help`)} for detailed usage of given command\r\n`)
+    console.log(`\r\n运行命令 ${chalk.cyan(`sg --help`)} 获取命令的详细用法\r\n`)
   })
   
 // 解析用户执行命令传入参数
