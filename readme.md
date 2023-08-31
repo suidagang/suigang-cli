@@ -15,7 +15,7 @@ $ yarn global add suigang-cli
 #### Quick Start
 
 ```shell
-// name 想要创建的项目名称
+# name 想要创建的项目名称
 sg create <name> [-f|--force]
 ```
 
