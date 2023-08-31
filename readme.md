@@ -1,23 +1,24 @@
-## 搭建一个简单的脚手架
+# 搭建自己的脚手架
 
-### 安装
+## 安装
 
 ```shell
-# install it globally
+# npm 全局安装
 $ npm install -g suigang-cli
 
-# or yarn
+# or yarn 全局安装
 $ yarn global add suigang-cli
 ```
 
-### 使用 
+### 使用
 
-#### Quick Start 
+#### Quick Start
 
 ```shell
-$ sg create <name> [-f|--force]
+// name 想要创建的项目名称
+sg create <name> [-f|--force]
 ```
 
 #### Options
 
-- `-f, --force`: Overwrite if the target exists
+- `-f, --force`: 强制覆盖目标目录相同的文件夹
