@@ -6,6 +6,9 @@
   "bin": {
     "sg": "./bin/cli.js"
   },
+  "scripts": {
+    "publish:create_sgCli": "gulp -f publish/index.js"
+  },
   "author": {
     "name": "suigang",
     "email": "244153653@qq.com"
