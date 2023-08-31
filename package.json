@@ -6,6 +6,10 @@
   "bin": {
     "sg": "./bin/cli.js"
   },
+  "author": {
+    "name": "suigang",
+    "email": "244153653@qq.com"
+  },
   "files": [
     "bin",
     "lib",
@@ -17,7 +21,6 @@
     "脚手架"
   ],
   "type": "module",
-  "author": "suigang",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.5.0",
@@ -26,7 +29,9 @@
     "download-git-repo": "^3.0.2",
     "figlet": "^1.6.0",
     "fs-extra": "^11.1.1",
+    "gulp": "^4.0.2",
     "https": "^1.0.0",
-    "inquirer": "^9.2.10"
+    "inquirer": "^9.2.10",
+    "release-it": "^16.1.5"
   }
 }
