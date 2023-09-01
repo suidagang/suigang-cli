@@ -1,6 +1,6 @@
 {
   "name": "suigang-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "sg cli",
   "main": "index.js",
   "bin": {
